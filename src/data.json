@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "img": "/Transparent/Img1.png",
+    "name": "Bleu de Chanel",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Lemon, Mint, Pink Pepper, Grapefruit",
+      "heart": "Ginger, Jasmine, Iso E Super, Nutmeg",
+      "base": "Incense, Vetiver, Cedar, Sandalwood, Patchouli, Labdanum"
+    },
+    "style": "Woody Aromatic",
+    "occasion": "Day & Evening",
+    "stars": 5,
+    "for": "Men",
+    "size": "100ml",
+    "price": 129.99
+  },
+  {
+    "id": 2,
+    "img": "/Transparent/Img2.png",
+    "name": "Chanel No.5",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Aldehydes, Ylang-Ylang, Neroli, Bergamot, Lemon",
+      "heart": "Iris, Jasmine, Rose, Lily of the Valley, Orris Root",
+      "base": "Sandalwood, Vanilla, Oakmoss, Vetiver, Patchouli"
+    },
+    "style": "Floral Aldehyde",
+    "occasion": "Evening & Formal",
+    "stars": 5,
+    "for": "Women",
+    "size": "100ml",
+    "price": 149.99
+  },
+  {
+    "id": 3,
+    "img": "/Transparent/Img3.png",
+    "name": "Versace Eros",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Mint, Green Apple, Lemon",
+      "heart": "Tonka Bean, Ambroxan, Geranium",
+      "base": "Vanilla, Cedarwood, Vetiver, Oakmoss"
+    },
+    "style": "Fresh Oriental",
+    "occasion": "Night Out",
+    "stars": 4,
+    "for": "Men",
+    "size": "100ml",
+    "price": 109.99
+  },
+  {
+    "id": 4,
+    "img": "/Transparent/Img4.png",
+    "name": "Dior Sauvage",
+    "longevity": "8-10h",
+    "fragranceNotes": {
+      "top": "Calabrian Bergamot, Pepper",
+      "heart": "Sichuan Pepper, Lavender, Pink Pepper, Patchouli, Geranium",
+      "base": "Ambroxan, Cedar, Labdanum"
+    },
+    "style": "Aromatic Fougere",
+    "occasion": "Everyday & Casual",
+    "stars": 5,
+    "for": "Men",
+    "size": "100ml",
+    "price": 139.99
+  },
+  {
+    "id": 5,
+    "img": "/Transparent/Img5.png",
+    "name": "YSL Libre",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Lavender, Mandarin Orange, Black Currant, Petitgrain",
+      "heart": "Jasmine, Lavender, Orange Blossom",
+      "base": "Madagascar Vanilla, Cedar, Ambergris, Musk"
+    },
+    "style": "Floral Fougere",
+    "occasion": "Day & Evening",
+    "stars": 4,
+    "for": "Women",
+    "size": "90ml",
+    "price": 124.99
+  },
+  {
+    "id": 6,
+    "img": "/Transparent/Img6.png",
+    "name": "Very Good Girl Carolina Herrera",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Lychee, Red Currant",
+      "heart": "Rose",
+      "base": "Vetiver, Vanilla"
+    },
+    "style": "Floral Fruity",
+    "occasion": "Date Night",
+    "stars": 4,
+    "for": "Women",
+    "size": "80ml",
+    "price": 119.99
+  },
+  {
+    "id": 7,
+    "img": "/Transparent/Img7.png",
+    "name": "Scandal Pour Homme",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Clary Sage, Mandarin",
+      "heart": "Caramel, Tonka Bean",
+      "base": "Vetiver"
+    },
+    "style": "Sweet Woody",
+    "occasion": "Evening & Casual",
+    "stars": 4,
+    "for": "Men",
+    "size": "100ml",
+    "price": 114.99
+  },
+  {
+    "id": 8,
+    "img": "/Transparent/Img8.png",
+    "name": "Carolina Herrera Bad Boy",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Black Pepper, White Pepper, Bergamot",
+      "heart": "Cedarwood, Sage",
+      "base": "Tonka Bean, Cocoa"
+    },
+    "style": "Oriental Spicy",
+    "occasion": "Evening",
+    "stars": 4,
+    "for": "Men",
+    "size": "100ml",
+    "price": 119.99
+  },
+  {
+    "id": 9,
+    "img": "/Transparent/Img9.png",
+    "name": "Stronger With You Emporio Armani",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Cardamom, Pink Pepper, Violet Leaf, Mint",
+      "heart": "Sage, Melon, Pineapple, Cinnamon, Lavender",
+      "base": "Vanilla, Chestnut, Cedar, Amberwood"
+    },
+    "style": "Warm Spicy",
+    "occasion": "Night Out",
+    "stars": 5,
+    "for": "Men",
+    "size": "100ml",
+    "price": 129.99
+  },
+  {
+    "id": 10,
+    "img": "/Transparent/Img10.png",
+    "name": "Creed Aventus",
+    "longevity": "9-11h",
+    "fragranceNotes": {
+      "top": "Pineapple, Black Currant, Bergamot, Apple",
+      "heart": "Birch, Patchouli, Jasmine, Rose",
+      "base": "Musk, Oakmoss, Ambergris, Vanilla"
+    },
+    "style": "Woody Fruity",
+    "occasion": "Formal & Evening",
+    "stars": 5,
+    "for": "Men",
+    "size": "100ml",
+    "price": 349.99
+  },
+  {
+    "id": 11,
+    "img": "/Transparent/Img11.png",
+    "name": "Tom Ford Tobacco Vanille",
+    "longevity": "10-12h",
+    "fragranceNotes": {
+      "top": "Tobacco Leaf, Spices",
+      "heart": "Tonka Bean, Tobacco Blossom, Vanilla, Cacao",
+      "base": "Dried Fruits, Woody Notes"
+    },
+    "style": "Oriental Spicy",
+    "occasion": "Formal & Evening",
+    "stars": 5,
+    "for": "Unisex",
+    "size": "100ml",
+    "price": 299.99
+  },
+  {
+    "id": 12,
+    "img": "/Transparent/Img12.png",
+    "name": "My Way Giorgio Armani",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Orange Blossom, Bergamot",
+      "heart": "Tuberose, Jasmine",
+      "base": "Cedarwood, Vanilla, White Musk"
+    },
+    "style": "Floral",
+    "occasion": "Daytime",
+    "stars": 4,
+    "for": "Women",
+    "size": "90ml",
+    "price": 119.99
+  },
+  {
+    "id": 13,
+    "img": "/Transparent/Img13.png",
+    "name": "Boss The Scent",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Ginger, Mandarin",
+      "heart": "Lavender, Maninka Fruit",
+      "base": "Leather, Woody Notes"
+    },
+    "style": "Woody Spicy",
+    "occasion": "Casual & Date",
+    "stars": 4,
+    "for": "Men",
+    "size": "100ml",
+    "price": 109.99
+  },
+  {
+    "id": 14,
+    "img": "/Transparent/Img14.png",
+    "name": "Miss Dior",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Blood Orange, Mandarin, Bergamot, Lemon",
+      "heart": "Grasse Rose, Damask Rose, Jasmine, Pink Pepper",
+      "base": "Patchouli, Palisander Rosewood"
+    },
+    "style": "Floral Chypre",
+    "occasion": "Day & Evening",
+    "stars": 5,
+    "for": "Women",
+    "size": "100ml",
+    "price": 139.99
+  },
+  {
+    "id": 15,
+    "img": "/Transparent/Img15.png",
+    "name": "Jean Paul Gaultier Le Male Le Parfum",
+    "longevity": "9-11h",
+    "fragranceNotes": {
+      "top": "Cardamom",
+      "heart": "Lavender, Iris",
+      "base": "Vanilla, Oriental Notes, Woods"
+    },
+    "style": "Oriental Woody",
+    "occasion": "Evening",
+    "stars": 5,
+    "for": "Men",
+    "size": "125ml",
+    "price": 134.99
+  },
+  {
+    "id": 16,
+    "img": "/Transparent/Img16.png",
+    "name": "Dior Poison Girl",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Bitter Orange, Lemon",
+      "heart": "Damask Rose, Grasse Rose, Orange Blossom",
+      "base": "Vanilla, Almond, Tonka Bean, Sandalwood"
+    },
+    "style": "Oriental Vanilla",
+    "occasion": "Evening",
+    "stars": 4,
+    "for": "Women",
+    "size": "100ml",
+    "price": 124.99
+  },
+  {
+    "id": 17,
+    "img": "/Transparent/Img17.png",
+    "name": "Lady Million Paco Rabanne",
+    "longevity": "6-8h",
+    "fragranceNotes": {
+      "top": "Neroli, Raspberry, Amalfi Lemon",
+      "heart": "Jasmine, Orange Blossom, Gardenia",
+      "base": "White Honey, Patchouli, Amber"
+    },
+    "style": "Floral Fruity",
+    "occasion": "Night Out",
+    "stars": 4,
+    "for": "Women",
+    "size": "80ml",
+    "price": 119.99
+  },
+  {
+    "id": 18,
+    "img": "/Transparent/Img18.png",
+    "name": "Azzaro Wanted",
+    "longevity": "7-9h",
+    "fragranceNotes": {
+      "top": "Lemon, Ginger, Lavender, Mint",
+      "heart": "Guatemalan Cardamom, Juniper, Apple, Geranium",
+      "base": "Tonka Bean, Amberwood, Haitian Vetiver"
+    },
+    "style": "Woody Spicy",
+    "occasion": "Day & Evening",
+    "stars": 4,
+    "for": "Men",
+    "size": "100ml",
+    "price": 114.99
+  }
+]
