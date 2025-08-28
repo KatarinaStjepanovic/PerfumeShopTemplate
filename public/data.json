@@ -14,7 +14,8 @@
     "stars": 5,
     "for": "Men",
     "size": "100ml",
-    "price": 129.99
+    "price": 129.99,
+    "desc": "A bold fusion of citrus, spice, and smoky woods — crafted for timeless sophistication."
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     "stars": 5,
     "for": "Women",
     "size": "100ml",
-    "price": 149.99
+    "price": 149.99,
+    "desc": "An iconic bouquet of florals and aldehydes — the essence of feminine elegance."
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     "stars": 4,
     "for": "Men",
     "size": "100ml",
-    "price": 109.99
+    "price": 109.99,
+    "desc": "A vibrant mix of mint, vanilla, and woods — built for magnetic confidence."
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     "stars": 5,
     "for": "Men",
     "size": "100ml",
-    "price": 139.99
+    "price": 139.99,
+    "desc": "Fresh bergamot and spicy ambroxan collide — a raw yet refined signature scent."
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
     "stars": 4,
     "for": "Women",
     "size": "90ml",
-    "price": 124.99
+    "price": 124.99,
+    "desc": "A daring twist of lavender, jasmine, and vanilla — freedom in a bottle."
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     "stars": 4,
     "for": "Women",
     "size": "80ml",
-    "price": 119.99
+    "price": 119.99,
+    "desc": "A playful dance of lychee, rose, and vanilla — irresistible and bold."
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
     "stars": 4,
     "for": "Men",
     "size": "100ml",
-    "price": 114.99
+    "price": 114.99,
+    "desc": "Sweet caramel meets sage and vetiver — an addictive, daring fragrance."
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
     "stars": 4,
     "for": "Men",
     "size": "100ml",
-    "price": 119.99
+    "price": 119.99,
+    "desc": "Bold peppers, cocoa, and tonka create a rebellious yet refined signature."
   },
   {
     "id": 9,
@@ -150,7 +158,8 @@
     "stars": 5,
     "for": "Men",
     "size": "100ml",
-    "price": 129.99
+    "price": 129.99,
+    "desc": "A warm blend of vanilla, spices, and woods — designed for lasting allure."
   },
   {
     "id": 10,
@@ -167,7 +176,8 @@
     "stars": 5,
     "for": "Men",
     "size": "100ml",
-    "price": 349.99
+    "price": 349.99,
+    "desc": "Juicy pineapple and smoky birch define a powerful, legendary signature."
   },
   {
     "id": 11,
@@ -184,7 +194,8 @@
     "stars": 5,
     "for": "Unisex",
     "size": "100ml",
-    "price": 299.99
+    "price": 299.99,
+    "desc": "Rich tobacco, sweet vanilla, and warm spice — opulent and unforgettable."
   },
   {
     "id": 12,
@@ -201,7 +212,8 @@
     "stars": 4,
     "for": "Women",
     "size": "90ml",
-    "price": 119.99
+    "price": 119.99,
+    "desc": "Bright florals with soft vanilla and musk — a radiant, modern femininity."
   },
   {
     "id": 13,
@@ -218,7 +230,8 @@
     "stars": 4,
     "for": "Men",
     "size": "100ml",
-    "price": 109.99
+    "price": 109.99,
+    "desc": "Spicy ginger and maninka fruit melt into leather — sensual and modern."
   },
   {
     "id": 14,
@@ -235,7 +248,8 @@
     "stars": 5,
     "for": "Women",
     "size": "100ml",
-    "price": 139.99
+    "price": 139.99,
+    "desc": "Lush roses with bright citrus and woods — a modern romantic classic."
   },
   {
     "id": 15,
@@ -252,7 +266,8 @@
     "stars": 5,
     "for": "Men",
     "size": "125ml",
-    "price": 134.99
+    "price": 134.99,
+    "desc": "Warm vanilla and cardamom layered with woods — bold and enduring."
   },
   {
     "id": 16,
@@ -269,7 +284,8 @@
     "stars": 4,
     "for": "Women",
     "size": "100ml",
-    "price": 124.99
+    "price": 124.99,
+    "desc": "A sweet burst of citrus, rose, and vanilla — playful yet seductive."
   },
   {
     "id": 17,
@@ -286,7 +302,8 @@
     "stars": 4,
     "for": "Women",
     "size": "80ml",
-    "price": 119.99
+    "price": 119.99,
+    "desc": "A glamorous mix of raspberry, jasmine, and honey — radiant and bold."
   },
   {
     "id": 18,
@@ -303,6 +320,7 @@
     "stars": 4,
     "for": "Men",
     "size": "100ml",
-    "price": 114.99
+    "price": 114.99,
+    "desc": "Bright lemon and spicy cardamom blend with woods — daring and dynamic."
   }
 ]
