@@ -39,7 +39,7 @@ function App() {
       }>
        
     </Route>
-    <Route path="/:productId" element={<ProductDesc/>} />
+    <Route path="/:productId" element={< ProductDesc data = {data} />} />
     </Routes>
    </BrowserRouter>
     

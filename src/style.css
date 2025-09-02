@@ -80,24 +80,122 @@ body {
 .favDiv{
     height: 55%;
     width: 80%;
-    position: absolute;
     transform: translate(-50%,-75%);
     left: 50%;
     top: 75%;
    position: relative;
+   height: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 1%;
 }
 
 .favBorder{
-    position: absolute;
+    position: relative;
     border: 2px solid var(--main-color);
     height: 100%;
-    position: relative;
-    width: 23%;
     top: 0;
-    margin-right: 20px;
-    text-decoration: none;
 }
 
 .favImg{
-    height: 60%;
+    height: 40%;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%,-40%);
+}
+
+.favName{
+    position: relative;
+    top: 8%;
+    left: 8%;
+    font-size: 20px;
+}
+
+.favDesc{
+    position: relative;
+    top: 15%;
+    left: 8%;
+    color: var(--main-color);
+    width: 82%;
+}
+
+.stars{
+    position: relative;
+    top: 30%;
+    left: 10%;
+    color: var(--main-color);
+    margin-right: 1%;
+}
+
+.ar{
+    position: relative;
+    left: 80%;
+    top: 20%;
+    transform: translateY(-40%);
+    visibility: hidden;
+    font-size: 200%;
+    color: var(--main-color);
+}
+
+.favBorder:hover .ar{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.fixedCart{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    color: var(--main-color);
+    font-size: 30px;
+    z-index: 9999;
+}
+
+.cart:hover{
+    cursor: pointer;
+}
+
+.descName{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.descImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40%;
+}
+
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  color: #f03355;
+  position: relative;
+  background: radial-gradient(10px,currentColor 94%,#0000);
+}
+.loader:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(9px at bottom right,#0000 94%,currentColor) top    left,
+    radial-gradient(9px at bottom left ,#0000 94%,currentColor) top    right,
+    radial-gradient(9px at top    right,#0000 94%,currentColor) bottom left,
+    radial-gradient(9px at top    left ,#0000 94%,currentColor) bottom right;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  animation: l18 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l18 {
+   33%  {inset:-10px;transform: rotate(0deg)}
+   66%  {inset:-10px;transform: rotate(90deg)}
+   100% {inset:0    ;transform: rotate(90deg)}
 }
