@@ -3,7 +3,7 @@
     "id": 1,
     "img": "/Transparent/Img1.png",
     "name": "Bleu de Chanel",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Lemon, Mint, Pink Pepper, Grapefruit",
       "heart": "Ginger, Jasmine, Iso E Super, Nutmeg",
@@ -39,7 +39,7 @@
     "id": 3,
     "img": "/Transparent/Img3.png",
     "name": "Versace Eros",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Mint, Green Apple, Lemon",
       "heart": "Tonka Bean, Ambroxan, Geranium",
@@ -57,7 +57,7 @@
     "id": 4,
     "img": "/Transparent/Img4.png",
     "name": "Dior Sauvage",
-    "longevity": "8-10h",
+    "longevity": "8h-10h",
     "fragranceNotes": {
       "top": "Calabrian Bergamot, Pepper",
       "heart": "Sichuan Pepper, Lavender, Pink Pepper, Patchouli, Geranium",
@@ -75,7 +75,7 @@
     "id": 5,
     "img": "/Transparent/Img5.png",
     "name": "YSL Libre",
-    "longevity": "7-9h",
+    "longevity": "7h-9h",
     "fragranceNotes": {
       "top": "Lavender, Mandarin Orange, Black Currant, Petitgrain",
       "heart": "Jasmine, Lavender, Orange Blossom",
@@ -93,7 +93,7 @@
     "id": 6,
     "img": "/Transparent/Img6.png",
     "name": "Very Good Girl Carolina Herrera",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Lychee, Red Currant",
       "heart": "Rose",
@@ -111,7 +111,7 @@
     "id": 7,
     "img": "/Transparent/Img7.png",
     "name": "Scandal Pour Homme",
-    "longevity": "7-9h",
+    "longevity": "7h-9h",
     "fragranceNotes": {
       "top": "Clary Sage, Mandarin",
       "heart": "Caramel, Tonka Bean",
@@ -129,7 +129,7 @@
     "id": 8,
     "img": "/Transparent/Img8.png",
     "name": "Carolina Herrera Bad Boy",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Black Pepper, White Pepper, Bergamot",
       "heart": "Cedarwood, Sage",
@@ -147,7 +147,7 @@
     "id": 9,
     "img": "/Transparent/Img9.png",
     "name": "Stronger With You Emporio Armani",
-    "longevity": "7-9h",
+    "longevity": "7h-9h",
     "fragranceNotes": {
       "top": "Cardamom, Pink Pepper, Violet Leaf, Mint",
       "heart": "Sage, Melon, Pineapple, Cinnamon, Lavender",
@@ -165,7 +165,7 @@
     "id": 10,
     "img": "/Transparent/Img10.png",
     "name": "Creed Aventus",
-    "longevity": "9-11h",
+    "longevity": "9h-11h",
     "fragranceNotes": {
       "top": "Pineapple, Black Currant, Bergamot, Apple",
       "heart": "Birch, Patchouli, Jasmine, Rose",
@@ -183,7 +183,7 @@
     "id": 11,
     "img": "/Transparent/Img11.png",
     "name": "Tom Ford Tobacco Vanille",
-    "longevity": "10-12h",
+    "longevity": "10h-12h",
     "fragranceNotes": {
       "top": "Tobacco Leaf, Spices",
       "heart": "Tonka Bean, Tobacco Blossom, Vanilla, Cacao",
@@ -201,7 +201,7 @@
     "id": 12,
     "img": "/Transparent/Img12.png",
     "name": "My Way Giorgio Armani",
-    "longevity": "7-9h",
+    "longevity": "7h-9h",
     "fragranceNotes": {
       "top": "Orange Blossom, Bergamot",
       "heart": "Tuberose, Jasmine",
@@ -219,7 +219,7 @@
     "id": 13,
     "img": "/Transparent/Img13.png",
     "name": "Boss The Scent",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Ginger, Mandarin",
       "heart": "Lavender, Maninka Fruit",
@@ -237,7 +237,7 @@
     "id": 14,
     "img": "/Transparent/Img14.png",
     "name": "Miss Dior",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Blood Orange, Mandarin, Bergamot, Lemon",
       "heart": "Grasse Rose, Damask Rose, Jasmine, Pink Pepper",
@@ -255,7 +255,7 @@
     "id": 15,
     "img": "/Transparent/Img15.png",
     "name": "Jean Paul Gaultier Le Male Le Parfum",
-    "longevity": "9-11h",
+    "longevity": "9h-11h",
     "fragranceNotes": {
       "top": "Cardamom",
       "heart": "Lavender, Iris",
@@ -273,7 +273,7 @@
     "id": 16,
     "img": "/Transparent/Img16.png",
     "name": "Dior Poison Girl",
-    "longevity": "7-9h",
+    "longevity": "7h-9h",
     "fragranceNotes": {
       "top": "Bitter Orange, Lemon",
       "heart": "Damask Rose, Grasse Rose, Orange Blossom",
@@ -291,7 +291,7 @@
     "id": 17,
     "img": "/Transparent/Img17.png",
     "name": "Lady Million Paco Rabanne",
-    "longevity": "6-8h",
+    "longevity": "6h-8h",
     "fragranceNotes": {
       "top": "Neroli, Raspberry, Amalfi Lemon",
       "heart": "Jasmine, Orange Blossom, Gardenia",
@@ -309,7 +309,7 @@
     "id": 18,
     "img": "/Transparent/Img18.png",
     "name": "Azzaro Wanted",
-    "longevity": "7-9h",
+    "longevity": "7h-9h",
     "fragranceNotes": {
       "top": "Lemon, Ginger, Lavender, Mint",
       "heart": "Guatemalan Cardamom, Juniper, Apple, Geranium",

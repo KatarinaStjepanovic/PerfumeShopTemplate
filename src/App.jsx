@@ -3,12 +3,14 @@ import { Route, Routes, BrowserRouter  } from "react-router-dom"
 import MainPage from "./components/MainPage"
 import CustomerFav from "./components/CustomerFav"
 import ProductDesc from "./components/ProductDesc"
+import CartList from "./components/CartList"
 
 import "./style.css"
 
 function App() {
   const [data, setData] = useState([]);
   const [favorite, setFav] = useState([]);
+  const [added, addProd] = useState([]);
   const section = useRef(null);
 
   useEffect(() => {
@@ -40,6 +42,7 @@ function App() {
        
     </Route>
     <Route path="/:productId" element={< ProductDesc data = {data} />} />
+    < Route path="/cart" element = {< CartList added = {added} />} />
     </Routes>
    </BrowserRouter>
     

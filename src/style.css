@@ -170,32 +170,136 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 40%;
+    height: 45%;
+ 
 }
 
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  color: #f03355;
-  position: relative;
-  background: radial-gradient(10px,currentColor 94%,#0000);
+.descLeft{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-60%);
+    color: var(--main-color);
+    font-size: 20px;
+    width: 30%;
+    line-height: 32px;
 }
-.loader:before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background:
-    radial-gradient(9px at bottom right,#0000 94%,currentColor) top    left,
-    radial-gradient(9px at bottom left ,#0000 94%,currentColor) top    right,
-    radial-gradient(9px at top    right,#0000 94%,currentColor) bottom left,
-    radial-gradient(9px at top    left ,#0000 94%,currentColor) bottom right;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  animation: l18 1.5s infinite cubic-bezier(0.3,1,0,1);
+
+.title{
+    color: white;
 }
-@keyframes l18 {
-   33%  {inset:-10px;transform: rotate(0deg)}
-   66%  {inset:-10px;transform: rotate(90deg)}
-   100% {inset:0    ;transform: rotate(90deg)}
+
+.descStars{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    font-size: 25px;
+}
+
+.descRight{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.long{
+    color: white;
+    font-size: 30px;
+}
+
+.longT{
+    text-align: right;
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.descHr{
+   color: var(--main-color);
+   width: 130%;
+   position: relative;
+   margin-top: 15%;
+   right: 30%;
+}
+
+.smallDet{
+    color: var(--main-color);
+    line-height: 180%;
+    text-align: right;
+    font-size: large;
+}
+
+.btn{
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.buttonsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20%;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    
+
+}
+
+.number{
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.error{
+    position: absolute;
+    top: -80%;
+    font-size: 15px;
+    left: 0;
+    color: red;
+
+}
+
+.price{
+    position: relative;
+    color: var(--main-color);
+    font-size: 25px;
+    text-align: right;
+    margin-top: 85%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addToCart{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    padding: 10%;
+    font-size: 20px;
+    color: var(--main-color);
+    width: 150%;
+    margin-top: 10%;
+    position: relative;
+    right: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.addToCart:hover{
+    background-color: var(--main-color);
+    color: #020304;
+    cursor: pointer;
+    letter-spacing: 1px;
 }
