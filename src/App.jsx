@@ -1,23 +1,23 @@
-import React, { useEffect, useState, useRef } from "react"
-import { Route, Routes, BrowserRouter  } from "react-router-dom"
-import MainPage from "./components/MainPage"
-import CustomerFav from "./components/CustomerFav"
-import ProductDesc from "./components/ProductDesc"
-import CartList from "./components/CartList"
+import React, { useEffect, useState, useRef } from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import MainPage from "./components/MainPage";
+import CustomerFav from "./components/CustomerFav";
+import ProductDesc from "./components/ProductDesc";
+import CartList from "./components/CartList";
+import AllProducts from "./components/AllProducts";
 
-import "./style.css"
+import "./style.css";
 
 function App() {
   const [data, setData] = useState([]);
   const [favorite, setFav] = useState([]);
-  const [added, addProd] = useState([]);
+  const [added, setAdded] = useState([]);
   const section = useRef(null);
 
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setFav(data.slice(0, 4));
         setData(data);
       })
@@ -25,27 +25,48 @@ function App() {
   }, []);
 
   const scroll = () => {
-    if( section.current){
-      section.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    if (section.current) {
+      section.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }
+  };
+
+  const addProduct = (product, num) => {
+    const newObj = product;
+    newObj.numberOf = num;
+    setAdded((prev) => {
+      const newArr = [...prev];
+      const index = newArr.findIndex((p) => p.name === newObj.name);
+      if (index !== -1) {
+        newArr[index].numberOf++;
+      } else {
+        newArr.push(newObj);
+      }
+      
+
+      return newArr;
+    });
+  };
 
   return (
-    < BrowserRouter>
-    <Routes>
-      < Route path="/"  element = {
-        <>
-      <MainPage  scroll = {scroll}/>
-      <CustomerFav ref = {section} favorite = {favorite}/>
-      </>
-      }>
-       
-    </Route>
-    <Route path="/:productId" element={< ProductDesc data = {data} />} />
-    < Route path="/cart" element = {< CartList added = {added} />} />
-    </Routes>
-   </BrowserRouter>
-    
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <MainPage scroll={scroll} />
+              <CustomerFav ref={section} favorite={favorite} />
+              < AllProducts />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/:productId"
+          element={<ProductDesc data={data} addProduct={addProduct} />}
+        />
+        <Route path="/cart" element={<CartList added={added} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-function ProductDesc({ data }) {
+
+function ProductDesc({ data, addProduct }) {
   const { productId } = useParams();
   const [product, setProd] = useState({});
   const [stars, setStars] = useState([]);
@@ -34,33 +37,35 @@ function ProductDesc({ data }) {
   }, [productId]);
 
   const decrement = () => {
-      setPrice(product.price * (num-1) )
-    if (num >   1) {
+    setPrice(product.price * (num - 1));
+    if (num > 1) {
       setNum((prev) => {
-        return prev - 1}
-      );
-      
+        return prev - 1;
+      });
     } else {
-      console.log(product.price)
-      setPrice( product.price)
+      setPrice(product.price);
       setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 1200);
     }
   };
 
   const increment = () => {
-    console.log(product.price)
-    setPrice(product.price * (num+1)  )
-   setNum((prev) => {
-        return prev + 1}
-      );
+    setPrice(product.price * (num + 1));
+    setNum((prev) => {
+      return prev + 1;
+    });
     setError(false);
   };
 
   return (
     <>
-    <div className="arrowBack">
-      
-    </div>
+      <div className="arrowBack"> 
+        < Link to = "/">
+          < FontAwesomeIcon icon={faArrowLeft} className="backIcon" />
+        </Link>
+      </div>
       <div className="descName">{product?.name}</div>
       <div className="descLeft">
         <div className="title">Fragrance Notes:</div>
@@ -106,9 +111,12 @@ function ProductDesc({ data }) {
           </button>
         </div>
         <div className="price">
-          Price: <span style={{ color: "white", marginLeft: "15px" }}>${price.toFixed(2)}</span>
+          Price:{" "}
+          <span style={{ color: "white", marginLeft: "15px" }}>
+            ${price.toFixed(2)}
+          </span>
         </div>
-        <button className="addToCart">Own This Scent</button>
+        <button className="addToCart" onClick={() => addProduct(product, num)}>Own This Scent</button>
       </div>
     </>
   );

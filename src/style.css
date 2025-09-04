@@ -265,20 +265,20 @@ body {
 
 .error{
     position: absolute;
-    top: -80%;
+    top: 37%;
     font-size: 15px;
     left: 0;
     color: red;
-
 }
 
 .price{
-    position: relative;
+    position: absolute;
     color: var(--main-color);
     font-size: 25px;
     text-align: right;
-    margin-top: 85%;
+    margin-top: 70%;
     right: 0;
+    top: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -291,7 +291,7 @@ body {
     font-size: 20px;
     color: var(--main-color);
     width: 150%;
-    margin-top: 10%;
+    margin-top: 80%;
     position: relative;
     right: 50%;
     transition: all 0.5s ease-in-out;
@@ -302,4 +302,70 @@ body {
     color: #020304;
     cursor: pointer;
     letter-spacing: 1px;
+}
+
+.backIcon{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    color: var(--main-color);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.allProdDiv{
+    height: 100vh;
+    position: relative;
+
+}
+
+.allTitle{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 12%;
+    left: 10%;
+}
+
+.allHr{
+    position: absolute;
+    width: 16%;
+    left: 25%;
+    top: 18%;
+    border: 1px solid var(--main-color);
+}
+
+.filter{
+    color: var(--main-color);
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    cursor: pointer;
+}
+
+.allProdShow{
+    background-color: red;
+    position: absolute;
+    width: 80%;
+    height: 55%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.explore{
+    color: white;
+    position: absolute;
+    top: 87%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.more{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.explore:hover .more{
+    opacity: 1;
 }
