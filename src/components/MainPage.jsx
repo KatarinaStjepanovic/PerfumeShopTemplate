@@ -1,11 +1,10 @@
-import React from "react"
+import React from "react";
 
-import Cart from "./Cart"
+import Cart from "./Cart";
 
 function MainPage({ scroll }) {
   return (
     <div className="mainDiv">
-      <Cart/>
       <div>
         <div className="mainTitle">
           Discover the fragrance <br /> that defines you

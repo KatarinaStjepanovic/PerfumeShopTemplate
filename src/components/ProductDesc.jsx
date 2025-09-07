@@ -6,15 +6,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
+import { useNavigate } from "react-router-dom";
 
 function ProductDesc({ data, addProduct }) {
+    const navigate = useNavigate();
   const { productId } = useParams();
   const [product, setProd] = useState({});
   const [stars, setStars] = useState([]);
   const [num, setNum] = useState(1);
   const [error, setError] = useState(false);
   const [price, setPrice] = useState(0);
+  console.log(productId)
+  console.log(data)
+  console.log(data[productId-1])
 
   useEffect(() => {
     for (let i = 0; i < 5; i++) {
@@ -33,7 +37,7 @@ function ProductDesc({ data, addProduct }) {
       }
     }
     setProd(data[productId - 1]);
-    setPrice(data[productId - 1].price);
+    setPrice(data[productId - 1]?.price);
   }, [productId]);
 
   const decrement = () => {
@@ -61,10 +65,10 @@ function ProductDesc({ data, addProduct }) {
 
   return (
     <>
-      <div className="arrowBack"> 
-        < Link to = "/">
-          < FontAwesomeIcon icon={faArrowLeft} className="backIcon" />
-        </Link>
+      <div className="arrowBack">
+
+          <FontAwesomeIcon icon={faArrowLeft} className="backIcon" onClick={() => {navigate(-1)}} />
+
       </div>
       <div className="descName">{product?.name}</div>
       <div className="descLeft">
@@ -116,7 +120,9 @@ function ProductDesc({ data, addProduct }) {
             ${price.toFixed(2)}
           </span>
         </div>
-        <button className="addToCart" onClick={() => addProduct(product, num)}>Own This Scent</button>
+        <button className="addToCart" onClick={() => addProduct(product, num)}>
+          Own This Scent
+        </button>
       </div>
     </>
   );

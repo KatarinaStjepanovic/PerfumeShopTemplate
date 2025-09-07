@@ -5,6 +5,7 @@ import CustomerFav from "./components/CustomerFav";
 import ProductDesc from "./components/ProductDesc";
 import CartList from "./components/CartList";
 import AllProducts from "./components/AllProducts";
+import Cart from "./components/Cart";
 
 import "./style.css";
 
@@ -41,7 +42,6 @@ function App() {
       } else {
         newArr.push(newObj);
       }
-      
 
       return newArr;
     });
@@ -55,8 +55,9 @@ function App() {
           element={
             <>
               <MainPage scroll={scroll} />
+               <Cart />
               <CustomerFav ref={section} favorite={favorite} />
-              < AllProducts />
+              <AllProducts data={data} />
             </>
           }
         ></Route>
