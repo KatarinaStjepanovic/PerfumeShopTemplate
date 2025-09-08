@@ -6,6 +6,7 @@ import ProductDesc from "./components/ProductDesc";
 import CartList from "./components/CartList";
 import AllProducts from "./components/AllProducts";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
 
 import "./style.css";
 
@@ -58,6 +59,7 @@ function App() {
                <Cart />
               <CustomerFav ref={section} favorite={favorite} />
               <AllProducts data={data} />
+              < Footer />
             </>
           }
         ></Route>
