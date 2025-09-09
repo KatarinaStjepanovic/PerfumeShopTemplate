@@ -5,17 +5,18 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import PreviousPage from "./PreviousPage";
+import Buttons from "./Buttons";
 
 function ProductDesc({ data, addProduct }) {
-    const navigate = useNavigate();
   const { productId } = useParams();
   const [product, setProd] = useState({});
   const [stars, setStars] = useState([]);
   const [num, setNum] = useState(1);
-  const [error, setError] = useState(false);
   const [price, setPrice] = useState(0);
+
+
   console.log(productId)
   console.log(data)
   console.log(data[productId-1])
@@ -40,36 +41,11 @@ function ProductDesc({ data, addProduct }) {
     setPrice(data[productId - 1]?.price);
   }, [productId]);
 
-  const decrement = () => {
-    setPrice(product.price * (num - 1));
-    if (num > 1) {
-      setNum((prev) => {
-        return prev - 1;
-      });
-    } else {
-      setPrice(product.price);
-      setError(true);
-      setTimeout(() => {
-        setError(false);
-      }, 1200);
-    }
-  };
-
-  const increment = () => {
-    setPrice(product.price * (num + 1));
-    setNum((prev) => {
-      return prev + 1;
-    });
-    setError(false);
-  };
+ 
 
   return (
     <>
-      <div className="arrowBack">
-
-          <FontAwesomeIcon icon={faArrowLeft} className="backIcon" onClick={() => {navigate(-1)}} />
-
-      </div>
+    < PreviousPage/>
       <div className="descName">{product?.name}</div>
       <div className="descLeft">
         <div className="title">Fragrance Notes:</div>
@@ -99,26 +75,12 @@ function ProductDesc({ data, addProduct }) {
         <div className="smallDet">
           Size: <span style={{ color: "white" }}>{product?.size}</span>
         </div>
-        <div className="buttonsDiv">
-          <div
-            className="error"
-            style={{ visibility: error ? "visible" : "hidden" }}
-          >
-            cannot be null
-          </div>
-          <button className="btn" onClick={decrement}>
-            -
-          </button>
-          <div className="number">{num}</div>
-          <button className="btn" onClick={increment}>
-            +
-          </button>
-        </div>
-        <div className="price">
-          Price:{" "}
-          <span style={{ color: "white", marginLeft: "15px" }}>
-            ${price.toFixed(2)}
-          </span>
+        <Buttons setNum={setNum} num={num} setPrice={setPrice} price = {price} product = {product}/>
+           <div className="price">
+        Price:{" "}
+        <span style={{ color: "white", marginLeft: "15px" }}>
+          ${price.toFixed(2)}
+        </span>
         </div>
         <button className="addToCart" onClick={() => addProduct(product, num)}>
           Own This Scent

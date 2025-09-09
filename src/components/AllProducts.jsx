@@ -32,9 +32,10 @@ function AllProducts({ data }) {
   };
 
   const handleClick = (value) => {
+    if (value === clicked) return;
     setClicked(value);
     setLoading(true);
-       setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
       setShowed(() => {
         return value === "none"
@@ -43,8 +44,7 @@ function AllProducts({ data }) {
               return d.for === value;
             });
       });
-    }, 1500) 
-    
+    }, 1500);
   };
 
   return (
@@ -91,14 +91,17 @@ function AllProducts({ data }) {
         className="allProdShow"
         style={{ overflowY: showMore ? "scroll" : "hidden" }}
       >
-       { loading ? <Loader /> :
-        showed.map((p, id) => {
-          return (
-            <Link to={`/${p.id}`} key={id}>
-              <Product product={p} key={id} />
-            </Link>
-          );
-        })}
+        {loading ? (
+          <Loader />
+        ) : (
+          showed.map((p, id) => {
+            return (
+              <Link to={`/${p.id}`} key={id}>
+                <Product product={p} key={id} />
+              </Link>
+            );
+          })
+        )}
       </div>
       <div className="explore" onClick={shMore}>
         {showed.length > 10
