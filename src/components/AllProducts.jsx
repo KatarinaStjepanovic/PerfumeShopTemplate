@@ -17,7 +17,6 @@ function AllProducts({ data }) {
 
   useEffect(() => {
     setShowed(() => {
-      console.log(data);
       const newArr = [...data];
       return newArr;
     });

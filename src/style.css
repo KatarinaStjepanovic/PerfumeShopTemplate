@@ -612,7 +612,7 @@ body {
 }
 
 .cartImg{
-    width: 10%;
+    height: 80%;
     position: relative;
     left: 5%;
     top: 50%;
@@ -633,4 +633,16 @@ body {
     top: 50%;
     left: 20%;
     font-size: 20px;
+}
+
+.small{
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    width: 30%;
+}
+
+.small .error{
+    position: absolute;
+    top: -60%;
 }

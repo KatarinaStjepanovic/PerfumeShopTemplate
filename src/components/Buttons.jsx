@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 
-function Buttons({ num, setNum, setPrice, price, product }) {
+function Buttons({ num, setNum, setPrice, price, product, classN, setAdded }) {
   const [error, setError] = useState(false);
+
+  const classes = classN ? `${classN} buttonsDiv ` : "buttonsDiv"
   const decrement = () => {
     setPrice(product.price * (num - 1));
     if (num > 1) {
       setNum((prev) => {
         return prev - 1;
       });
+         setAdded && setAdded( prev => {
+      const newArr = [...prev]
+      const ind  = newArr.findIndex(p => p.name === product.name)
+      newArr[ind].numberOf--;
+      return newArr;
+    }
+    )
     } else {
       setPrice(product.price);
       setError(true);
@@ -18,6 +27,14 @@ function Buttons({ num, setNum, setPrice, price, product }) {
   };
 
   const increment = () => {
+       setAdded && setAdded( prev => {
+    console.log(product.numberOf)
+      const newArr = [...prev]
+      const ind  = newArr.findIndex(p => p.name === product.name)
+      newArr[ind].numberOf++;
+      return newArr;
+    }
+    )
     setPrice(product.price * (num + 1));
     setNum((prev) => {
       return prev + 1;
@@ -26,7 +43,7 @@ function Buttons({ num, setNum, setPrice, price, product }) {
   };
   return (
     <>
-      <div className="buttonsDiv">
+      <div className={classes}>
         <div
           className="error"
           style={{ visibility: error ? "visible" : "hidden" }}

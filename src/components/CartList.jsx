@@ -2,15 +2,14 @@ import React from "react";
 import PreviousPage from "./PreviousPage";
 import CartProduct from "./CartProduct";
 
-function CartList({added}) {
-  console.log(added)
+function CartList({added, setAdded}) {
   return (
     <>
       <PreviousPage />
       < div className="cartTitle">Selected Scents</div>
       <div className="cartListProducts">
-        {added.map( (p) => {
-            return < CartProduct product={p} />
+        {added.map( (p, id) => {
+            return < CartProduct product={p} setAdded= {setAdded} key = {id} />
         })}
       </div>
     </>

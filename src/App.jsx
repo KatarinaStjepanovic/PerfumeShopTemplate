@@ -33,7 +33,7 @@ function App() {
   };
 
   const addProduct = (product, num) => {
-    const newObj = product;
+    const newObj = JSON.parse(JSON.stringify(product));
     newObj.numberOf = num;
     setAdded((prev) => {
       const newArr = [...prev];
@@ -65,9 +65,9 @@ function App() {
         ></Route>
         <Route
           path="/:productId"
-          element={<ProductDesc data={data} addProduct={addProduct} />}
+          element={<ProductDesc data={data} addProduct={addProduct} added = {added} />}
         />
-        <Route path="/cart" element={<CartList added={added} />} />
+        <Route path="/cart" element={<CartList added={added} setAdded = {setAdded} />} />
       </Routes>
     </BrowserRouter>
   );

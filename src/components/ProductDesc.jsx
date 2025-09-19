@@ -9,17 +9,13 @@ import { useNavigate } from "react-router-dom";
 import PreviousPage from "./PreviousPage";
 import Buttons from "./Buttons";
 
-function ProductDesc({ data, addProduct }) {
+function ProductDesc({ data, addProduct, added }) {
   const { productId } = useParams();
   const [product, setProd] = useState({});
   const [stars, setStars] = useState([]);
   const [num, setNum] = useState(1);
   const [price, setPrice] = useState(0);
-
-
-  console.log(productId)
-  console.log(data)
-  console.log(data[productId-1])
+  const navigate = useNavigate();
 
   useEffect(() => {
     for (let i = 0; i < 5; i++) {
@@ -37,7 +33,9 @@ function ProductDesc({ data, addProduct }) {
         });
       }
     }
-    setProd(data[productId - 1]);
+    const ind = added.findIndex(p => p.name === data[productId-1].name);
+    console.log(ind)
+    setProd(ind !== -1 ? added[ind]: data[productId - 1]);
     setPrice(data[productId - 1]?.price);
   }, [productId]);
 
@@ -82,7 +80,9 @@ function ProductDesc({ data, addProduct }) {
           ${price.toFixed(2)}
         </span>
         </div>
-        <button className="addToCart" onClick={() => addProduct(product, num)}>
+        <button className="addToCart" onClick={() => {
+          navigate(-1);
+          addProduct(product, num)}}>
           Own This Scent
         </button>
       </div>
