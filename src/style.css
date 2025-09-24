@@ -1,5 +1,6 @@
 :root {
     --main-color: #A08D8A;
+    --lowered-opacity: #514847;
 }
 
 body {
@@ -444,7 +445,7 @@ body {
 }
 
 .productDiv:hover {
-    background-color: #514847;
+    background-color: var(--lowered-opacity);
 }
 
 .productDiv:hover .productIcon {
@@ -607,8 +608,16 @@ body {
     width: 100%;
     height: 18%;
     margin-bottom: 2%;
-    border-bottom: 2px solid var(--main-color);
     position: relative;
+}
+
+.cartProdDiv::before{
+    content: "";
+    background-color: var(--main-color);
+    width: 95%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
 }
 
 .cartImg{
@@ -646,3 +655,181 @@ body {
     position: absolute;
     top: -60%;
 }
+
+.checkoutDiv{
+    width: 25%;
+    height: 70%;
+    right: 10%;
+    top: 20%;
+    position: absolute;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.checkPadd{
+   height: 85%;
+   width: 85%;
+}
+
+.checkTitle{
+    color: white;
+    margin-bottom: 10%;
+}
+
+.deleteProd{
+    cursor: pointer;
+    color: var(--main-color);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.inputDiv{
+    color: white;
+    padding-left: 0%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.inputDiv input{
+    border: 2px solid var(--main-color);
+    margin-left: 10%;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 2%;
+    color: var(--lowered-opacity);
+    padding-left: 5%;
+
+
+}
+
+.text{
+    width: 15%;
+}
+
+.shippTitle{
+    color: var(--main-color);
+    margin-top: 10%;
+}
+
+.inputAdd{
+    color: var(--lowered-opacity);
+     background-color: transparent;
+     border: 1px solid var(--main-color);
+     padding: 2%;
+     width: 90%;
+     margin-top: 5%;
+     border-radius: 10px;
+     padding-left: 5%;
+    
+}
+  
+    input[type='radio']:after {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: black;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: var(--main-color);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid transparent;
+    }
+
+    .radioButtons{
+        color: var(--main-color);
+        margin-top: 2%;
+    }
+
+
+    .radioBlock{
+        font-size: 15px;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .radioBtn{
+        margin-right: 2%;
+    }
+
+    .paymentM{
+        font-size: 18px;
+        margin-top: 5%;
+        cursor: pointer;
+        position: relative;
+        color: var(--main-color);
+    }
+
+    .checkDrop{
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        background-color: black;
+        z-index: 999;
+    }
+
+    .dropOpt:hover{
+      color: white;
+    }
+
+    
+    
+    .paymentM:hover .checkDrop{
+        opacity: 1;
+        color: var(--main-color);
+    }
+
+    .payment{
+       top: 20%;
+       position: relative;
+       margin-top: 2%;
+       font-size: 18px;
+       color: white;
+    }
+
+    .summedPrice{
+        position: absolute;
+        color: white;
+        bottom: 5% ;
+    }
+
+    .pay{
+        border: none;
+        border-bottom: 1px solid var(--main-color);
+        border-top: 1px solid var(--main-color);
+        color: white;
+        position: absolute;
+        right: 10%;
+        background-color: transparent;
+        padding: 2%;
+        font-size: 18px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .pay:hover{
+        cursor: pointer;
+        scale: 1.1;
+    }
+
+

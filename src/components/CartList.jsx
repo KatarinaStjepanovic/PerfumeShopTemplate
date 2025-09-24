@@ -1,6 +1,7 @@
 import React from "react";
 import PreviousPage from "./PreviousPage";
 import CartProduct from "./CartProduct";
+import Checkout from "./Checkout";
 
 function CartList({added, setAdded}) {
   return (
@@ -11,6 +12,9 @@ function CartList({added, setAdded}) {
         {added.map( (p, id) => {
             return < CartProduct product={p} setAdded= {setAdded} key = {id} />
         })}
+      </div>
+      <div className="checkout">
+        <Checkout added = {added}/>
       </div>
     </>
   );
